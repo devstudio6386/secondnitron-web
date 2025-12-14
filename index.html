@@ -3,9 +3,8 @@
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NITRON FITNESS CLUB - Elite Transformation Center</title>
+  <title>STRONGER GYM - Elite Transformation Center</title>
   <link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Bebas+Neue&amp;family=Oswald:wght@400;600;700&amp;display=swap" rel="stylesheet">
-  <script src="/_sdk/element_sdk.js"></script>
   <script src="/_sdk/element_sdk.js"></script>
   <style>
     body {
@@ -60,12 +59,12 @@
     .navbar-brand {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 15px;
     }
 
     .logo-placeholder {
-      width: 30px;
-      height: 30px;
+      width: 50px;
+      height: 50px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -75,22 +74,7 @@
     .logo-placeholder img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
-    }
-
-    .feature-icon {
-      width: 100%;
-      height: 80px;
-      object-fit: cover;
-      margin-bottom: 20px;
-    }
-
-    .program-icon {
-      width: 100%;
-      height: 120px;
-      object-fit: cover;
-      margin-bottom: 25px;
-      transition: transform 0.4s ease;
+      object-fit: contain;
     }
 
     .brand-name {
@@ -98,7 +82,6 @@
       font-size: 28px;
       letter-spacing: 2px;
       color: #fff;
-      white-space: nowrap;
     }
 
     .nav-menu {
@@ -202,7 +185,7 @@
     .hero-logo img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
     }
 
     .hero-brand-name {
@@ -312,22 +295,15 @@
 
     .features-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 40px;
       max-width: 1400px;
       margin: 0 auto;
     }
 
-    @media (orientation: landscape) {
-      .features-grid {
-        max-width: 12000px;
-        grid-template-columns: repeat(auto-fit, minmax(6000px, 1fr));
-      }
-    }
-
     .feature-card {
       background: linear-gradient(135deg, #1a1a1a, #0a0a0a);
-      padding: 5px 30px;
+      padding: 40px 30px;
       text-align: center;
       border: 2px solid #333;
       transition: all 0.4s ease;
@@ -516,35 +492,6 @@
       text-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
     }
 
-    .review-image {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-      margin-top: 15px;
-      border-radius: 5px;
-      border: 2px solid #333;
-    }
-
-    .btn-instagram {
-      background: #e91e63;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 14px;
-      letter-spacing: 1px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 10px;
-    }
-
-    .btn-instagram:hover {
-      background: #c2185b;
-      transform: scale(1.05);
-    }
-
     /* Gallery Section */
     .gallery {
       background: #050505;
@@ -605,19 +552,6 @@
     .gallery-item:hover {
       transform: scale(1.05);
       border-color: #ff0000;
-    }
-
-    .gallery-item .btn-instagram {
-      position: absolute;
-      bottom: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      opacity: 0;
-      transition: opacity 0.4s ease;
-    }
-
-    .gallery-item:hover .btn-instagram {
-      opacity: 1;
     }
 
     /* Membership Section */
@@ -933,16 +867,16 @@
   <div class="app-wrapper"><!-- Navbar -->
    <nav class="navbar" id="navbar">
     <div class="navbar-brand">
-    <div class="logo-placeholder"><img src="https://ik.imagekit.io/hyi9kn2fq/WhatsApp%20Image%202025-12-14%20at%2012.47.22%20PM.jpeg" alt="NITRON FITNESS CLUB Logo">
+     <div class="logo-placeholder"><img src="https://ik.imagekit.io/hyi9kn2fq/WhatsApp%20Image%202025-12-14%20at%2012.47.22%20PM.jpeg" alt="Stronger Gym Logo">
      </div>
      <div class="brand-name">
-      NITRON FITNESS CLUB
+      STRONGER GYM
      </div>
     </div>
     <ul class="nav-menu" id="navMenu">
      <li><a href="#home">Home</a></li>
      <li><a href="#programs">Programs</a></li>
-
+     <li><a href="#coaches">Coaches</a></li>
      <li><a href="#gallery">Gallery</a></li>
      <li><a href="#membership">Membership</a></li>
      <li><a href="#contact">Contact</a></li>
@@ -953,7 +887,10 @@
    <section class="hero" id="home">
     <div class="hero-content">
      <div class="hero-brand">
-      <div class="hero-logo"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b" alt="NITRON FITNESS CLUB Logo">
+      <div class="hero-logo"><img src="https://ik.imagekit.io/hyi9kn2fq/WhatsApp%20Image%202025-12-14%20at%2012.47.22%20PM.jpeg" alt="Stronger Gym Logo">
+      </div>
+      <div class="hero-brand-name">
+       STRONGER GYM
       </div>
      </div>
      <h1 id="heroHeadline">STRONGER THAN YESTERDAY</h1>
@@ -961,58 +898,121 @@
      <div class="hero-buttons"><a href="#membership" class="btn-primary">JOIN THE BEAST MODE</a> <a href="#contact" class="btn-secondary">FREE TRIAL PASS</a>
      </div>
     </div>
-  </section><!-- Programs Section -->
+   </section><!-- Why Stronger Section -->
+   <section class="why-stronger" id="why">
+    <h2 class="section-title">WHY STRONGER GYM</h2>
+    <div class="features-grid">
+     <div class="feature-card">
+      <div class="feature-icon">
+       💪
+      </div>
+      <h3>HARDCORE TRAINING</h3>
+      <p>Elite training programs designed to push you beyond your limits. No shortcuts, just pure dedication and results.</p>
+     </div>
+     <div class="feature-card">
+      <div class="feature-icon">
+       🏆
+      </div>
+      <h3>ELITE COACHES</h3>
+      <p>World-class trainers with proven track records. Our coaches have transformed thousands of lives.</p>
+     </div>
+     <div class="feature-card">
+      <div class="feature-icon">
+       ⚡
+      </div>
+      <h3>IMPORTED MACHINES</h3>
+      <p>State-of-the-art equipment imported from the best manufacturers worldwide. Train like a champion.</p>
+     </div>
+     <div class="feature-card">
+      <div class="feature-icon">
+       🔥
+      </div>
+      <h3>REAL TRANSFORMATIONS</h3>
+      <p>Documented success stories from real people who achieved extraordinary results with us.</p>
+     </div>
+    </div>
+   </section><!-- Programs Section -->
    <section class="programs" id="programs">
     <h2 class="section-title">TRANSFORMATION PROGRAMS</h2>
     <div class="programs-grid">
      <div class="program-card">
-      <img class="program-icon" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b" alt="Muscle Gain">
+      <div class="program-icon">
+       💪
+      </div>
       <h3>MUSCLE GAIN</h3>
       <p>Build serious mass with our hypertrophy-focused training protocols.</p><a href="#contact" class="btn-primary">START NOW</a>
      </div>
      <div class="program-card">
-      <img class="program-icon" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b" alt="Fat Loss">
+      <div class="program-icon">
+       🔥
+      </div>
       <h3>FAT LOSS</h3>
       <p>Shred body fat while maintaining lean muscle mass with our cutting programs.</p><a href="#contact" class="btn-primary">START NOW</a>
      </div>
      <div class="program-card">
-      <img class="program-icon" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b" alt="Strength Training">
+      <div class="program-icon">
+       ⚡
+      </div>
       <h3>STRENGTH TRAINING</h3>
       <p>Develop raw power and explosive strength with powerlifting protocols.</p><a href="#contact" class="btn-primary">START NOW</a>
      </div>
      <div class="program-card">
-      <img class="program-icon" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b" alt="Crossfit HIIT">
+      <div class="program-icon">
+       🏃
+      </div>
       <h3>CROSSFIT / HIIT</h3>
       <p>High-intensity functional training for peak athletic performance.</p><a href="#contact" class="btn-primary">START NOW</a>
      </div>
      <div class="program-card">
-      <img class="program-icon" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b" alt="Personal Training">
+      <div class="program-icon">
+       🎯
+      </div>
       <h3>PERSONAL TRAINING</h3>
       <p>One-on-one coaching tailored to your specific goals and needs.</p><a href="#contact" class="btn-primary">START NOW</a>
+     </div>
+    </div>
+   </section><!-- Coaches Section -->
+   <section class="coaches" id="coaches">
+    <h2 class="section-title">ELITE COACHING TEAM</h2>
+    <div class="coaches-grid">
+     <div class="coach-card">
+      <div class="coach-image">
+       <div class="coach-info">
+        <h3>MARCUS STEEL</h3>
+        <p class="coach-specialty">Strength &amp; Powerlifting</p>
+        <div class="red-line"></div><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon">📷</a>
+       </div>
+      </div>
+     </div>
+     <div class="coach-card">
+      <div class="coach-image" style="background-image: url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=800')">
+       <div class="coach-info">
+        <h3>ALEX IRON</h3>
+        <p class="coach-specialty">Bodybuilding &amp; Hypertrophy</p>
+        <div class="red-line"></div><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon">📷</a>
+       </div>
+      </div>
+     </div>
+     <div class="coach-card">
+      <div class="coach-image" style="background-image: url('https://images.unsplash.com/photo-1567598508481-65985588e295?w=800')">
+       <div class="coach-info">
+        <h3>VICTORIA BLAZE</h3>
+        <p class="coach-specialty">CrossFit &amp; HIIT</p>
+        <div class="red-line"></div><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon">📷</a>
+       </div>
+      </div>
      </div>
     </div>
    </section><!-- Gallery Section -->
    <section class="gallery" id="gallery">
     <h2 class="section-title">TRAINING GALLERY</h2>
     <div class="gallery-grid">
-     <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800')">
-      <a href="https://instagram.com" target="_blank" class="btn-instagram">CHECK ON INSTAGRAM</a>
-     </div>
-     <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800')">
-      <a href="https://instagram.com" target="_blank" class="btn-instagram">CHECK ON INSTAGRAM</a>
-     </div>
-     <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=800')">
-      <a href="https://instagram.com" target="_blank" class="btn-instagram">CHECK ON INSTAGRAM</a>
-     </div>
-     <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=800')">
-      <a href="https://instagram.com" target="_blank" class="btn-instagram">CHECK ON INSTAGRAM</a>
-     </div>
-     <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=800')">
-      <a href="https://instagram.com" target="_blank" class="btn-instagram">CHECK ON INSTAGRAM</a>
-     </div>
-     <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800')">
-      <a href="https://instagram.com" target="_blank" class="btn-instagram">CHECK ON INSTAGRAM</a>
-     </div>
+     <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800')"></div>
+     <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800')"></div>
+     <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=800')"></div>
+     <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=800')"></div>
+     <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=800')"></div>
+     <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800')"></div>
     </div>
    </section><!-- Membership Section -->
    <section class="membership" id="membership">
@@ -1076,13 +1076,13 @@
    </section><!-- Footer -->
    <footer>
     <div class="footer-brand">
-     NITRON FITNESS CLUB
+     STRONGER GYM
     </div>
     <p class="footer-quote" id="footerQuote">WE DON'T STOP WHEN WE'RE TIRED. WE STOP WHEN WE'RE DONE.</p>
     <div class="social-links"><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">📘</a> <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">📷</a> <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">📺</a> <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">🐦</a>
     </div>
     <div class="footer-copyright">
-     © 2024 NITRON FITNESS CLUB. All Rights Reserved.
+     © 2024 STRONGER GYM. All Rights Reserved.
     </div>
    </footer><!-- Floating WhatsApp --> <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" class="floating-whatsapp">💬</a> <!-- Sticky CTA Bar -->
    <div class="sticky-cta" id="stickyCta"><a href="#contact">JOIN NOW - TRANSFORM YOUR LIFE TODAY</a>
@@ -1203,5 +1203,5 @@
       contactForm.reset();
     });
   </script>
- </body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9addae8077a85520',t:'MTc2NTcxNTEwMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
