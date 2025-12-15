@@ -3,7 +3,7 @@
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GOLD FITNESS GYM - Gold Fitness Gym Transformation Center</title>
+  <title>NITRON FITNESS CLUB - NITRON FITNESS CLUB Transformation Center</title>
   <link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Bebas+Neue&amp;family=Oswald:wght@400;600;700&amp;display=swap" rel="stylesheet">
   <script src="/_sdk/element_sdk.js"></script>
   <style>
@@ -167,7 +167,7 @@
       align-items: center;
       justify-content: center;
       gap: 20px;
-      margin-bottom: 40px;
+      margin-bottom: 97px;
     }
 
     .hero-logo {
@@ -668,7 +668,8 @@
     }
 
     .form-group input,
-    .form-group textarea {
+    .form-group textarea,
+    .form-group select {
       width: 100%;
       padding: 15px;
       background: #0a0a0a;
@@ -680,7 +681,8 @@
     }
 
     .form-group input:focus,
-    .form-group textarea:focus {
+    .form-group textarea:focus,
+    .form-group select:focus {
       outline: none;
       border-color: #ff0000;
       box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
@@ -689,6 +691,35 @@
     .form-group textarea {
       resize: vertical;
       min-height: 120px;
+    }
+
+    .service-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn-service {
+      padding: 15px 20px;
+      background: #ff0000;
+      color: #fff;
+      border: none;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 16px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+    }
+
+    .btn-service:hover {
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+      transform: scale(1.05);
+    }
+
+    .btn-service.selected {
+      background: #8b0000;
+      box-shadow: 0 0 20px rgba(139, 0, 0, 0.8);
     }
 
     /* Floating Elements */
@@ -867,10 +898,10 @@
   <div class="app-wrapper"><!-- Navbar -->
    <nav class="navbar" id="navbar">
     <div class="navbar-brand">
-     <div class="logo-placeholder"><img src="https://ik.imagekit.io/hyi9kn2fq/WhatsApp%20Image%202025-12-14%20at%2012.47.22%20PM.jpeg" alt="GOLD FITNESS GYM Logo">
+     <div class="logo-placeholder"><img src="https://ik.imagekit.io/hyi9kn2fq/WhatsApp%20Image%202025-12-14%20at%2012.47.22%20PM.jpeg" alt="NITRON FITNESS CLUB Logo">
      </div>
      <div class="brand-name">
-      GOLD FITNESS GYM
+      NITRON FITNESS CLUB
      </div>
     </div>
     <ul class="nav-menu" id="navMenu">
@@ -887,33 +918,30 @@
    <section class="hero" id="home">
     <div class="hero-content">
      <div class="hero-brand">
-      <div class="hero-logo"><img src="https://ik.imagekit.io/hyi9kn2fq/WhatsApp%20Image%202025-12-14%20at%2012.47.22%20PM.jpeg" alt="GOLD FITNESS GYM Logo">
-      </div>
-      <div class="hero-brand-name">
-       GOLD FITNESS GYM
-      </div>
+      
+     
      </div>
      <h1 id="heroHeadline">STRONGER THAN YESTERDAY</h1>
      <p id="heroSubline">NO EXCUSES. NO LIMITS. ONLY RESULTS.</p>
-     <div class="hero-buttons"><a href="#membership" class="btn-primary">JOIN THE BEAST MODE</a> <a href="#contact" class="btn-secondary">FREE TRIAL PASS</a>
+     <div class="hero-buttons"><a href="#membership" class="btn-primary">JOIN THE BEAST MODE</a> <a href="#contact" class="btn-secondary">200/ For Trial</a>
      </div>
     </div>
    </section><!-- Why Stronger Section -->
    <section class="why-stronger" id="why">
-    <h2 class="section-title">WHY GOLD FITNESS GYM</h2>
+    <h2 class="section-title">WHY NITRON FITNESS CLUB</h2>
     <div class="features-grid">
      <div class="feature-card">
       <div class="feature-icon">
        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=200&fit=crop" alt="Hardcore Training">
       </div>
       <h3>HARDCORE TRAINING</h3>
-      <p>Elite training programs designed to push you beyond your limits. No shortcuts, just pure dedication and results.</p>
+      <p>Nitron training programs designed to push you beyond your limits. No shortcuts, just pure dedication and results.</p>
      </div>
      <div class="feature-card">
       <div class="feature-icon">
        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&h=200&fit=crop" alt="Elite Coaches">
       </div>
-      <h3>ELITE COACHES</h3>
+      <h3>Nitron COACHES</h3>
       <p>World-class trainers with proven track records. Our coaches have transformed thousands of lives.</p>
      </div>
      <div class="feature-card">
@@ -973,7 +1001,7 @@
     </div>
    </section><!-- Coaches Section -->
    <section class="coaches" id="coaches">
-    <h2 class="section-title">ELITE COACHING TEAM</h2>
+    <h2 class="section-title">Nitron COACHING TEAM</h2>
     <div class="coaches-grid">
      <div class="coach-card">
       <div class="coach-image">
@@ -1043,8 +1071,8 @@
        <li>Personal training (2x/month)</li>
       </ul><a href="#contact" class="btn-primary">JOIN NOW</a>
      </div>
-     <div class="pricing-card elite">
-      <h3 class="plan-name">ELITE</h3>
+     <div class="pricing-card Nitron">
+      <h3 class="plan-name">Nitron</h3>
       <div class="plan-price">
        $199<span style="font-size: 24px;">/month</span>
       </div>
@@ -1070,21 +1098,26 @@
      </div>
      <div class="form-group"><label for="phone">PHONE NUMBER</label> <input type="tel" id="phone" name="phone" required>
      </div>
-     <div class="form-group"><label for="goal">YOUR GOAL</label> <textarea id="goal" name="goal" required placeholder="Tell us what you want to achieve..."></textarea>
-     </div><button type="submit" class="btn-primary" style="width: 100%;">SUBMIT NOW</button>
+     <div class="form-group"><label for="service">CHOOSE SERVICE</label>
+      <input type="hidden" id="service" name="service" required>
+      <div class="service-buttons">
+       <button type="button" class="btn-service" data-value="Basic Plan">Basic Plan</button>
+       <button type="button" class="btn-service" data-value="Pro Plan">Pro Plan</button>
+       <button type="button" class="btn-service" data-value="Nitron Plan">Nitron Plan</button>
+      </div>
+     </div>
+     <button type="submit" class="btn-primary" style="width: 100%; margin-top: 20px;">SEND MESSAGE</button>
     </form>
    </section><!-- Footer -->
    <footer>
     <div class="footer-brand">
-     GOLD FITNESS GYM
+     NITRON FITNESS CLUB
     </div>
-    <p class="footer-quote" id="footerQuote">WE DON'T STOP WHEN WE'RE TIRED. WE STOP WHEN WE'RE DONE.</p>
-    <div class="social-links"><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">📘</a> <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">📷</a> <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">📺</a> <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">🐦</a>
-    </div>
+    
     <div class="footer-copyright">
-     © 2024 GOLD FITNESS GYM. All Rights Reserved.
+     © 2024 NITRON FITNESS CLUB. All Rights Reserved. (Designed by Dev)
     </div>
-   </footer><!-- Floating WhatsApp --> <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" class="floating-whatsapp">💬</a> <!-- Sticky CTA Bar -->
+   </footer><!-- Floating WhatsApp --> <a href="https://wa.me/916386754482" target="_blank" rel="noopener noreferrer" class="floating-whatsapp">💬</a> <!-- Sticky CTA Bar -->
    <div class="sticky-cta" id="stickyCta"><a href="#contact">JOIN NOW - TRANSFORM YOUR LIFE TODAY</a>
    </div>
   </div>
@@ -1188,18 +1221,29 @@
       }
     });
 
+    // Service button selection
+    const serviceButtons = document.querySelectorAll('.btn-service');
+    const serviceInput = document.getElementById('service');
+    serviceButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        serviceButtons.forEach(btn => btn.classList.remove('selected'));
+        button.classList.add('selected');
+        serviceInput.value = button.getAttribute('data-value');
+      });
+    });
+
     // Contact form submission
     const contactForm = document.getElementById('contactForm');
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const name = document.getElementById('name').value;
       const phone = document.getElementById('phone').value;
-      const goal = document.getElementById('goal').value;
-      
-      const message = `Hi! I'm ${name}. My goal: ${goal}`;
-      const whatsappUrl = `https://wa.me/1234567890?text=${encodeURIComponent(message)}`;
+      const service = document.getElementById('service').value;
+
+      const message = `Hi! I'm ${name}. Phone: ${phone}. Service: ${service}`;
+      const whatsappUrl = `https://wa.me/916386754482?text=${encodeURIComponent(message)}`;
       window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
-      
+
       contactForm.reset();
     });
   </script>
